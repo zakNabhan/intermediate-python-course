@@ -17,7 +17,8 @@ first_word("Hello world") == "Hello"
 
 
 def first_word(text: str = "") -> str:
-    return text[0: 5]
+    words = text.split()
+    return words[0]   # return text.split(" ")[0]
 
 
 if __name__ == "__main__":

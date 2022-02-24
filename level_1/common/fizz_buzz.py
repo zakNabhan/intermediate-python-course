@@ -33,10 +33,14 @@ def checkio(number: int) -> str:
 
     # replace this for solution
 
-    if not number % 15:
-        return "FizzBuzz"
-    elif not number % 5:
+    if number % 3 == 0 and number % 5 == 0:
+        return "Fizz Buzz"
+    elif number % 3 == 0:  # test was wrong
         return "Fizz"
+    elif number % 5 == 0:  # test was wrong
+        return "Buzz"
+    else:
+        return str(number)
 
 
 # Some hints:
